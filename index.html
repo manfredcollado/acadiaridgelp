@@ -16,4 +16,64 @@
             background-image: url('background.jpg'); /* Fullscreen background image */
             background-size: cover; /* Make sure the background covers the entire screen */
             background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Avoid repeating
+            background-repeat: no-repeat; /* Avoid repeating the background image */
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* 10% lighter transparent overlay */
+            z-index: 1; /* Place the overlay behind the content */
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2; /* Place the content above the overlay */
+        }
+
+        .hero {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 40px; /* Increased space below the title */
+        }
+
+        .contact {
+            font-size: 1.1em; /* Slightly larger font for "Contact Us" */
+            margin-bottom: 10px; /* Reduced space below "Contact Us" */
+        }
+
+        .contact a {
+            text-decoration: underline;
+            color: #cfcfcf; /* Light gray for "Contact Us" */
+            font-size: 1.1em; /* Matching the font size for "Contact Us" */
+        }
+
+        .contact .location {
+            margin-top: 10px; /* Adjusted space between lines */
+            color: #cfcfcf;
+            font-size: 1.1em; /* Matching the size of "Contact Us" */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div> <!-- Fullscreen overlay -->
+
+    <div class="container">
+        <div class="hero">Acadia Ridge LP</div>
+
+        <div class="contact">
+            <a href="mailto:info@acadiaridgelp.com">Contact Us</a>
+        </div>
+
+        <div class="location">
+            New York, NY &nbsp; | &nbsp; Bar Harbor, ME
+        </div>
+    </div>
+
+</body>
+</html>
