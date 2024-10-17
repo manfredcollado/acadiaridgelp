@@ -13,18 +13,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('background.jpg'); /* Use the background.jpg file */
+            background-image: url('background.jpg'); /* Fullscreen background image */
             background-size: cover; /* Make sure the background covers the entire screen */
             background-position: center; /* Center the background image */
             background-repeat: no-repeat; /* Avoid repeating the background image */
             color: white;
         }
 
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* 10% lighter transparent overlay */
+            z-index: 1; /* Place the overlay behind the content */
+        }
+
         .container {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background to make text more readable */
-            padding: 20px;
-            border-radius: 10px;
+            z-index: 2; /* Place the content above the overlay */
         }
 
         .hero {
@@ -51,6 +59,8 @@
     </style>
 </head>
 <body>
+
+    <div class="overlay"></div> <!-- Fullscreen overlay -->
 
     <div class="container">
         <div class="hero">Acadia Ridge LP</div>
