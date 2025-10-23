@@ -20,40 +20,30 @@
     }
 
     .logo {
-      width: 300px; /* Adjust as needed */
-      max-width: 80%;
+      width: 1024px; /* Full logo width */
+      max-width: 90%;
+      height: auto;
       margin-bottom: 40px;
     }
 
-    .contact a {
-      text-decoration: underline;
-      color: #555;
-      font-size: 1.1em;
-    }
-
-    .contact a:hover {
-      color: #000;
-    }
-
     .location {
-      margin-top: 10px;
       color: #555;
       font-size: 1em;
+      margin-bottom: 15px;
     }
 
-    .investor-login {
-      margin-top: 25px;
-    }
-
-    .investor-login a {
-      color: #c7a24c; /* Gold accent */
-      text-decoration: none;
-      font-weight: bold;
+    .links {
       font-size: 1.1em;
     }
 
-    .investor-login a:hover {
+    .links a {
       text-decoration: underline;
+      color: #555; /* same as Contact Us */
+      margin: 0 10px;
+    }
+
+    .links a:hover {
+      color: #000;
     }
   </style>
 </head>
@@ -63,18 +53,14 @@
     <!-- Centered Logo -->
     <img src="logo.png" alt="Acadia Ridge LP Logo" class="logo" />
 
-    <!-- Contact -->
-    <div class="contact">
-      <a href="mailto:info@acadiaridgelp.com">Contact Us</a>
-    </div>
-
     <!-- Location -->
     <div class="location">
       New York, NY &nbsp; | &nbsp; Bar Harbor, ME
     </div>
 
-    <!-- Investor Login -->
-    <div class="investor-login">
+    <!-- Contact + Investor Login -->
+    <div class="links">
+      <a href="mailto:info@acadiaridgelp.com">Contact Us</a> |
       <a href="https://investor.acadiaridgelp.com" target="_blank">Investor Login</a>
     </div>
   </div>
