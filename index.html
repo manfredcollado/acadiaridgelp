@@ -5,62 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acadia Ridge LP</title>
   <link rel="icon" type="image/png" href="faviconAR.png">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #ffffff; /* White background */
-      color: #333;
-      text-align: center;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+  }
 
+  .logo {
+    width: 1024px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+  }
+
+  /* Medium screens (tablets, small laptops) */
+  @media (max-width: 1024px) {
     .logo {
-      width: 1024px;
-      max-width: 60%;
-      height: auto;
-      margin-bottom: 25px;
+      max-width: 80%;
     }
+  }
 
-    .location {
-      color: #555;
-      font-size: 1.1em;
-      margin-bottom: 40px;
+  /* Small screens (phones) */
+  @media (max-width: 600px) {
+    .logo {
+      max-width: 90%;
     }
+  }
 
-    .contact {
-      font-size: 0.9em;
-      margin-bottom: 25px;
-    }
+  .location {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+  }
 
-    .contact a {
-      text-decoration: underline;
-      color: #555;
-    }
+  .contact {
+    font-size: 0.9em;
+    margin-bottom: 25px;
+  }
 
-    .contact a:hover {
-      color: #000;
-    }
+  .contact a {
+    text-decoration: underline;
+    color: #555;
+  }
 
-    .investor-login {
-      font-size: 0.6em; /* smaller font */
-      color: #555;
-    }
+  .contact a:hover {
+    color: #000;
+  }
 
-    .investor-login a {
-      text-decoration: underline;
-      color: #555;
-    }
+  .investor-login {
+    font-size: 0.6em;
+    color: #555;
+  }
 
-    .investor-login a:hover {
-      color: #000;
-    }
-  </style>
+  .investor-login a {
+    text-decoration: underline;
+    color: #555;
+  }
+
+  .investor-login a:hover {
+    color: #000;
+  }
+</style>
+
 </head>
 <body>
 
